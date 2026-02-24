@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Emaxindia Dhanbad</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #2c3e50; margin-bottom: 5px; }
+        h3 { text-align: center; color: #555; margin-top: 0; font-weight: normal; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], select, textarea {
+            width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        .row { display: flex; gap: 20px; }
+        .col { flex: 1; }
+        .header-logo { text-align: center; margin-bottom: 20px; }
+        button { display: block; width: 100%; padding: 10px; background-color: #e74c3c; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+        button:hover { background-color: #c0392b; }
+        .office-use { background-color: #ecf0f1; padding: 15px; border: 1px dashed #7f8c8d; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-logo">
+        <h2>Emaxindia</h2>
+        <h3>Dhanbad Branch</h3>
+        <hr>
+        <h2>Student Course Registration Form</h2>
+    </div>
+
+    <form action="#" method="POST">
+        <!-- Student Details -->
+        <h4>1. Student Details</h4>
+        <div class="form-group">
+            <label>Student Name:</label>
+            <input type="text" name="student_name" placeholder="Enter Full Name" required>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Father's/Husband's Name:</label>
+                    <input type="text" name="father_name" placeholder="Enter Name">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Date of Birth:</label>
+                    <input type="date" name="dob">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Details -->
+        <h4>2. Contact Details</h4>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="tel" name="mobile" placeholder="+91 XXXXXXXXXX" required>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Email ID:</label>
+                    <input type="email" name="email" placeholder="example@email.com">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Full Address:</label>
+            <textarea name="address" rows="2" placeholder="Street, City, Pincode"></textarea>
+        </div>
+
+        <!-- Course Details -->
+        <h4>3. Course Details</h4>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label>Course Applied For:</label>
+                    <select name="course">
+                        <option value="">Select Course</option>
+                        <option value="DCA">DCA (Diploma in Computer Application)</option>
+                        <option value="ADCA">ADCA</option>
+                        <option value="Tally">Tally with GST</option>
+                        <option value="Typing">Typing Course</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label>Batch Timing:</label>
+                    <select name="timing">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Declaration -->
+        <div style="margin-top:20px; margin-bottom:20px;">
+            <input type="checkbox" required> I hereby declare that the information provided is true.
+        </div>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+    <div class="office-use">
+        <strong>For Office Use Only:</strong><br>
+        Reg. No: ___________________ <br>
+        Fee Received: ___________________ <br>
+        Signature: ___________________
+    </div>
+</div>
+
+</body>
+</html>
